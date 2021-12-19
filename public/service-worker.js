@@ -1,4 +1,5 @@
 // Service worker structure taken from PWA Activity 12 service worker.
+console.log("Your service worker is logged!");
 const FILES_TO_CACHE = ["/", "index.html", "styles.css", "index.js", "db.js"];
 
 // these are the names of my caches
