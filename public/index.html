@@ -58,6 +58,7 @@
     <script src="./index.js"></script>
     <script src="./db.js"></script>
     <script>
+      // The service worker isn't just a file you link, you have to register it because you're caching this file so you don't have to load the index file.
       (function () {
         if ("serviceWorker" in navigator) {
           navigator.serviceWorker
