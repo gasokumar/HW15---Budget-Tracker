@@ -39,6 +39,7 @@ function checkDatabase() {
 
   //   If there's anything in the object store, post the results to our database using the /api/transaction/bulk path.
   getAll.onsuccess = function () {
+    console.log("Transaction stored", getAll.result);
     if (getAll.result.length > 0) {
       fetch("/api/transaction/bulk", {
         method: "POST",
