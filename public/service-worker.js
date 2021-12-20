@@ -1,5 +1,12 @@
 // Service worker structure taken from PWA Activity 12 service worker.
-const FILES_TO_CACHE = ["/", "index.html", "styles.css", "index.js", "db.js"];
+const FILES_TO_CACHE = [
+  "/",
+  "index.html",
+  "styles.css",
+  "index.js",
+  "db.js",
+  "manifest.webmanifest",
+];
 
 // these are the names of my caches
 const CACHE_NAME = "static-cache-v3";
