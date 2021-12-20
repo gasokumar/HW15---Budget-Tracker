@@ -61,15 +61,6 @@ function checkDatabase() {
     }
   };
 }
-// This function deletes the data in our object store.
-function deleteStore() {
-  // Opening a transaction
-  const transaction = db.transaction(["pendingTransactions"], "readwrite");
-  //   Opening the object store for the transaction
-  const store = transaction.objectStore("pendingTransactions");
-  //   clearing the object store
-  store.clear();
-}
 
 // When the app comes back online, run checkDatabase (which posts transactions that have been stored offline to our online database)
 window.addEventListener("online", checkDatabase);
