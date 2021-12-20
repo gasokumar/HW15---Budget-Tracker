@@ -20,12 +20,12 @@ request.onsuccess = function (event) {
 };
 
 // saveRecord function found in index.js line 139. This function saves data to our object store
-function saveRecord(transaction) {
+function saveRecord(record) {
   // Opening a transaction in the object store pendingTransactions
   const transaction = db.transaction(["pendingTransactions"], "readwrite");
   //   Linking the transaction to the object store
   const store = transaction.objectStore("pendingTransactions");
-  store.add(transaction);
+  store.add(record);
 }
 
 // This function checks to see if there's anything in our indexedDB (used to store transactions when our app is offline). If there's anything in our database, it posts the data to our database.
