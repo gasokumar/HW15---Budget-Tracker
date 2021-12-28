@@ -1,3 +1,4 @@
+// This file is for offline db use
 // https://www.youtube.com/watch?v=VNFDoawcmNc Video on using IndexedDB that helped me
 // Creating an empty db variable
 let db;
